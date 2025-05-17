@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LEDWindow</class>
+ <widget class="QMainWindow" name="LEDWindow">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>400</width><height>200</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Control de LEDs</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="label_lum">
+    <property name="geometry"><rect><x>120</x><y>20</y><width>160</width><height>30</height></rect></property>
+    <property name="text"><string>Luminosidad: 0</string></property>
+    <property name="alignment"><set>Qt::AlignCenter</set></property>
+   </widget>
+   <widget class="QWidget" name="led_widget" native="true">
+    <property name="geometry"><rect><x>30</x><y>70</y><width>341</width><height>51</height></rect></property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item><widget class="QLabel" name="led1"><property name="text"><string>LED 1</string></property><property name="styleSheet"><string>background-color: gray;</string></property></widget></item>
+     <item><widget class="QLabel" name="led2"><property name="text"><string>LED 2</string></property><property name="styleSheet"><string>background-color: gray;</string></property></widget></item>
+     <item><widget class="QLabel" name="led3"><property name="text"><string>LED 3</string></property><property name="styleSheet"><string>background-color: gray;</string></property></widget></item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
